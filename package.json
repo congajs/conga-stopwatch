@@ -1,0 +1,27 @@
+{
+  "name": "conga-stopwatch",
+  "version": "0.0.1",
+  "description": "The stopwatch module provides an easy way to measure execution time of specific parts of code, so that dealing with microtime is abstracted",
+  "directories": {
+    "test": "test"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/congajs/conga-stopwatch.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Anthony Matarazzo",
+    "email": "email@anthonymatarazzo.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "microtime": "^2.1.5"
+  },
+  "devDependencies": {},
+  "readmeFilename": "README.md"
+}
