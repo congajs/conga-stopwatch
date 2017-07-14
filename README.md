@@ -112,12 +112,14 @@ class MyClass {
  
         for (let [ idx, node ] of data.entries()) {
             
-            /** do something **/
-            
-            if (idx < len) {
-                // if we have more data, start a new event period (lap)
-                event.lap();
+            // the event was started above the loop
+            // if we are on an iteration greater than the first, we need to lap the event
+            if (idx > 0) {
+                stopwatch.lap();
             }
+            
+            /** do something **/
+ 
         }
         event.stop();
     }
@@ -148,6 +150,10 @@ stopwatch.stop();
 
 Sections, like events, return their own instance that you can capture and reuse, or you can work with 
 the stopwatch instance directly and it will find the last opened section.
+
+It's important to note, however, that when you create a section it will start the first period for you, although there 
+is no event created at this time.  When you call stop, it collects the last period in the collection (first in last out) 
+and uses that to create the event.  Events work this way regardless of sections.
 
 ```
 const { Stopwatch } = require('conga-stopwatch');
