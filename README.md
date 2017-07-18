@@ -80,7 +80,7 @@ stopwatch.lap(); // laps second_event
  
 /* do something */
  
-stopwatch.start*('third_event');
+stopwatch.start('third_event');
  
 /* do something */
  
@@ -115,7 +115,7 @@ class MyClass {
             // the event was started above the loop
             // if we are on an iteration greater than the first, we need to lap the event
             if (idx > 0) {
-                stopwatch.lap();
+                event.lap();
             }
             
             /** do something **/
