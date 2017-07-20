@@ -1,4 +1,4 @@
-conga-stopwatch
+@conga/stopwatch
 ===============
 
 The stopwatch provides functionality for you to profile runtime operations, 
@@ -17,7 +17,7 @@ The memory usage for each period is retrieved by calling `process.memoryUsage`.
 Simple Example:
 
 ```
-const { Stopwatch } = require('conga-stopwatch');
+const { Stopwatch } = require('@conga/stopwatch');
  
 const stopwatch = new Stopwatch();
  
@@ -42,7 +42,7 @@ given the asynchronous nature of Node, you should be aware of your lifecycle and
 instances that get returned so you do not run into concurrency issues.
 
 ```
-const { Stopwatch } = require('conga-stopwatch');
+const { Stopwatch } = require('@conga/stopwatch');
  
 const stopwatch = new Stopwatch();
  
@@ -64,7 +64,7 @@ event.stop();
 The following code will have three overlapping events.
 
 ```
-const { Stopwatch } = require('conga-stopwatch');
+const { Stopwatch } = require('@conga/stopwatch');
  
 const stopwatch = new Stopwatch();
  
@@ -98,7 +98,7 @@ stopwatch.stop(); // stops first_event
 Example using the stopwatch in a loop:
 
 ```
-const { Stopwatch } = require('conga-stopwatch');
+const { Stopwatch } = require('@conga/stopwatch');
  
 class MyClass {
     constructor(data) {
@@ -134,7 +134,7 @@ console.log(obj.stopwatch);
 Example using sections:
 
 ```
-const { Stopwatch } = require('conga-stopwatch');
+const { Stopwatch } = require('@conga/stopwatch');
  
 const stopwatch = new Stopwatch();
  
@@ -156,7 +156,7 @@ is no event created at this time.  When you call stop, it collects the last peri
 and uses that to create the event.  Events work this way regardless of sections.
 
 ```
-const { Stopwatch } = require('conga-stopwatch');
+const { Stopwatch } = require('@conga/stopwatch');
  
 const stopwatch = new Stopwatch();
  
