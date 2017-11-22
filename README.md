@@ -23,5 +23,5 @@ the finishing microtime of the period, and the duration in microtime for this pe
 
 The memory usage for each period is retrieved by calling `process.memoryUsage`.
 
-See the [documentation](/docs) for more information and usage examples.
+> See the [documentation](/docs) for more information and usage examples.
 
