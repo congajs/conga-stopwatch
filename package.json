@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "microtime": "^2.1.5"
+    "microtime-x": "^1.0.0"
   },
   "devDependencies": {
     "jasmine": "^2.6.0",
