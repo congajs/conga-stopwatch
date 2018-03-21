@@ -1,6 +1,6 @@
 {
   "name": "@conga/stopwatch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The stopwatch module provides an easy way to measure execution time of specific parts of code, so that dealing with microtime is abstracted",
   "directories": {
     "test": "test"
