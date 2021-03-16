@@ -1,6 +1,6 @@
 {
   "name": "@conga/stopwatch",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The stopwatch module provides an easy way to measure execution time of specific parts of code, so that dealing with microtime is abstracted",
   "directories": {
     "test": "test"
@@ -20,11 +20,11 @@
   },
   "license": "MIT",
   "dependencies": {
-    "microtime": "^2.1.7"
+    "microtime": "^3.0.0"
   },
   "devDependencies": {
-    "jasmine": "^2.6.0",
-    "should": "^11.2.1"
+    "jasmine": "^3.6.4",
+    "should": "^13.2.3"
   },
   "readmeFilename": "README.md"
 }
